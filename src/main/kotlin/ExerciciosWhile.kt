@@ -25,7 +25,7 @@ fun main() {
 fun caixaDAgua() {
     var i = 1
     var contador = 0
-    while (i < 2000) {
+    while (i + 7< 2000) {
         i += 7
         contador++
     }
@@ -36,11 +36,13 @@ fun fizzBuzz() {
     var i = 1
     while (i <= 50) {
         if (i % 3 == 0 && i % 5 == 0)
-            println("$i: FizzBuzz")
+            println("FizzBuzz ")
         else if (i % 3 == 0)
-            println("$i: Buzz")
+            println("Buzz ")
         else if (i % 5 == 0)
-            println("$i: Fizz")
+            println("Fizz ")
+        else
+            println("$i ")
         i++
     }
 }
@@ -49,9 +51,9 @@ fun imprimeInvertido() {
     print("Digite a String: ")
     val str = readLine()
     if (str != null && str != "") {
-        var i = str.length
-        while (i > 0) {
-            print("${str[i - 1]}")
+        var i = str.length - 1
+        while (i >= 0) {
+            print("${str[i]}")
             i--
         }
     } else
@@ -67,9 +69,9 @@ fun verificaCaracteres() {
         var contaO = 0
         str = str.lowercase()
         while (i < str.length) {
-            if (str[i].equals("x")){
+            if (str[i] == 'x'){
                 contaX++
-            } else if (str[i].equals("o")){
+            } else if (str[i] == 'o'){
                 contaO++
             }
             i++
