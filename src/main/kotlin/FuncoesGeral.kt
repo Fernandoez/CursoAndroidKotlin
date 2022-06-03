@@ -4,12 +4,23 @@ fun main() {
     helloWord3()
     println("${sum(10, 5)}")
     println("${divisao(10f, 5.5f)}")
+    endereco("street", "city", "es")
 }
 
 //"fun" indica uma funcao
 //o nome vem em seguida (helloworld)
 //pode ou não ter parametros, nesse caso nome (obrigatoriamente tem que ser informado o tipo)
 //e pode ou não ter retorno (toda funcao com retorno obrigatoriamente precisa ter return)
+
+//funcoes podem ter parametros a serem passados de forma opcional, para isso basta inicializar o mesmo na criação da função
+//na hora de chamar não sou obrigado a informar cep e num.
+fun endereco(rua: String, cidade: String, estado: String, cep: String = "", num: Int = 0){
+
+    //Outra forma de passar parâmetros seria usando informando o próprio nome do mesmo na chamada da função.
+    //Com isso é perdido mudar até a ordem de informação dos mesmos, por exemplo:
+    //endereco(estado = "es", rua = "street", cidade = "city")
+}
+
 fun helloWorld(nome: String): String {
     return "Olá, $nome!"
 }
