@@ -4,7 +4,7 @@ fun main() {
 
 // Usando vararg em um parâmetro de função, indico que não existe limite para a quantidade de parâmetros.
 //A função aceita quantos eu quiser passar e trabalha em cima da quantidade passada
-//A chamada pode ser verificada na main
+//A chamada pode ser verificada na Colecoes.Colecoes.Colecoes.main
 fun media(vararg notas: Float) {
     var soma = 0f
     for (i in notas) {

@@ -1,6 +1,6 @@
 /*
 1 - Crie um programa capaz de atender os requisitos abaixo:
-a. Crie um novo arquivo com uma função main.
+a. Crie um novo arquivo com uma função Colecoes.Colecoes.Colecoes.main.
 b. Declare uma variável mutável capaz de armazenar seu nome completo.
 c. Declare uma variável de texto sem valor algum.
 d. Declare uma variável imutável com o menor tipo de dado possível capaz de armazenar o número que você
